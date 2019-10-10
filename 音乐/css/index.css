@@ -1,0 +1,63 @@
+html,body {
+    box-sizing: border-box;
+    border: 1px solid transparent; /*解决margin合并问题*/
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(to left top, rgba(255, 0, 170, 0.3),rgba(241, 226, 4, 0.2)), url(/Users/gmn2580/Desktop/音乐/photo-1514320291840-2e0a9bf2a9ae.jpeg) center center no-repeat;
+    background-size: cover;
+  }
+  .musicbox {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: orange;
+    border: 1px solid #76dba3;
+    width: 340px;
+    padding: 20px 20px 5px 20px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,.1),0px 2px 10px 0px rgba(0,0,0,.05);
+    margin: 0 auto;
+    margin-top: 180px;
+  }
+  .musicbox .control {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #ee8a87;
+    float: left;
+  }
+  .musicbox .control .fa {
+    margin-right: 12px;
+    cursor: pointer;
+  }
+  .musicbox .control .fa.disable{
+    opacity: 0.3;
+  }
+  .musicbox .info {
+    margin-left: 120px;
+  }
+  .musicbox .info .title {
+    font-size: 18px;
+  }
+  .musicbox .info .author {
+    font-size: 12px;
+  }
+  .musicbox .progress .bar {
+    height: 3px;
+    background-color: pink;
+    margin-top: 20px;
+  }
+  .musicbox .progress .progress-now{
+    background-color: red;
+    height: 3px;
+    width: 0;
+  }
+  .musicbox .time {
+    text-align: right;
+  }
+  .musicbox .music::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
